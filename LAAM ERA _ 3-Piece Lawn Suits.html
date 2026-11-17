@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LAAM ERA | 3-Piece Lawn Suits</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf9f7;--card:#fff;--ink:#17201f;--muted:#68726f;--line:#e8e6e1;--sale:#d62f3f;--navy:#16232b;--teal:#0f5257;--gold:#e8a317;--glass:rgba(250,249,247,.82);--shadow:0 10px 30px rgba(20,30,28,.08);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1312;--card:#161e1d;--ink:#eef3f1;--muted:#9aa8a4;--line:#27322f;--navy:#0a1114;--teal:#5fc2c0;--glass:rgba(14,19,18,.82);--shadow:0 10px 30px rgba(0,0,0,.4)}}
+:root[data-theme="dark"]{--bg:#0e1312;--card:#161e1d;--ink:#eef3f1;--muted:#9aa8a4;--line:#27322f;--navy:#0a1114;--teal:#5fc2c0;--glass:rgba(14,19,18,.82);--shadow:0 10px 30px rgba(0,0,0,.4)}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 80px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Jost,system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);z-index:30}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.mq{background:var(--navy);color:#fff;overflow:hidden;white-space:nowrap;font-size:.8rem;letter-spacing:.14em;padding:9px 0}
+.mq div{display:inline-block;padding-left:100%;animation:mq 28s linear infinite}
+@keyframes mq{to{transform:translateX(-100%)}}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:0 28px;height:68px}
+.logo{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:1.9rem;letter-spacing:.16em}
+.logo i{color:var(--gold);font-style:italic}
+.sr{display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:0 14px;height:40px;max-width:260px}
+.sr input{border:0;background:none;color:var(--ink);font:inherit;width:100%;outline:0}
+.hr{display:flex;gap:12px;align-items:center;justify-content:flex-end}
+.ic{width:36px;height:36px;border-radius:50%;background:var(--ink);color:var(--bg);display:grid;place-items:center;font-size:.82rem;font-weight:600;transition:transform .2s}
+.ic:hover{transform:translateY(-2px)}
+.cartb{background:var(--teal);color:var(--bg);border:0;border-radius:999px;height:40px;padding:0 16px;font-weight:500;display:flex;gap:8px;align-items:center}
+.cartb b{background:var(--gold);color:#2a1f00;border-radius:50%;min-width:22px;height:22px;font-size:.75rem;display:grid;place-items:center}
+.hero{position:relative;height:min(80vh,640px);overflow:hidden;margin:14px 20px 0;border-radius:28px}
+.track{display:flex;height:100%;transition:transform .6s cubic-bezier(.65,0,.35,1)}
+.slide{flex:0 0 100%;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:24px;position:relative}
+.slide::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(255,255,255,.22),transparent 45%)}
+.slide>div{position:relative;z-index:1}
+.slide h1{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:clamp(2.6rem,9vw,7rem);letter-spacing:.22em;margin:0;padding-left:.22em;line-height:1}
+.slide p{letter-spacing:.35em;font-size:clamp(.78rem,2vw,1.05rem);margin:14px 0 28px}
+.slide .go{display:inline-block;background:#fff;color:#17201f;border-radius:999px;padding:14px 32px;letter-spacing:.16em;font-size:.82rem;font-weight:500;transition:transform .2s}
+.slide .go:hover{transform:scale(1.05)}
+.arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.2);backdrop-filter:blur(8px);color:#fff;border:1px solid rgba(255,255,255,.4);width:46px;height:46px;border-radius:50%;font-size:1.3rem;z-index:2}
+.prev{left:18px}.next{right:18px}
+.dots{position:absolute;bottom:18px;left:0;right:0;display:flex;justify-content:center;gap:8px;z-index:2}
+.dots button{width:8px;height:8px;border-radius:99px;border:0;background:rgba(255,255,255,.5);padding:0;transition:width .3s}
+.dots button[aria-current="true"]{background:#fff;width:28px}
+.banners{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;padding:14px 20px 0}
+.banners a{height:230px;border-radius:22px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;overflow:hidden;position:relative;transition:transform .3s}
+.banners a:hover{transform:translateY(-6px)}
+.banners h2{font-family:"Cormorant Garamond",serif;font-size:clamp(1.4rem,2.6vw,2.2rem);letter-spacing:.18em;margin:0;font-weight:600;padding-left:.18em}
+.banners span{letter-spacing:.26em;font-size:.7rem}
+.sec{text-align:center;margin:56px 20px 22px}
+.sec h2{font-family:"Cormorant Garamond",serif;font-size:clamp(2rem,4vw,2.9rem);margin:0;letter-spacing:.06em;font-weight:600}
+.sec h2 i{color:var(--gold)}
+.sec p{margin:6px 0 0;color:var(--muted)}
+.chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:16px 0 0}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:9px 20px;font-size:.88rem}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:20px;padding:0 24px}
+.card{background:var(--card);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);transition:transform .3s}
+.card:hover{transform:translateY(-6px)}
+.pic{aspect-ratio:3/4;position:relative;overflow:hidden}
+.pic .art{position:absolute;inset:0;transition:transform .6s}
+.card:hover .art{transform:scale(1.08)}
+.save{position:absolute;top:12px;left:12px;background:var(--sale);color:#fff;font-size:.72rem;padding:4px 10px;border-radius:99px;z-index:1}
+.oos{position:absolute;left:0;right:0;top:45%;text-align:center;background:rgba(0,0,0,.65);color:#fff;padding:8px;font-size:.82rem;letter-spacing:.1em;z-index:1}
+.heart{position:absolute;top:10px;right:10px;width:34px;height:34px;border-radius:50%;border:0;background:var(--glass);backdrop-filter:blur(8px);color:var(--ink);font-size:1rem;z-index:1}
+.heart[aria-pressed="true"]{color:var(--sale)}
+.add{position:absolute;left:12px;right:12px;bottom:12px;background:var(--glass);backdrop-filter:blur(10px);color:var(--ink);border:0;border-radius:999px;padding:12px;font-size:.78rem;letter-spacing:.12em;font-weight:500;transform:translateY(160%);transition:transform .25s;z-index:1}
+.card:hover .add,.card:focus-within .add{transform:none}
+.add:disabled{color:var(--muted)}
+@media(hover:none){.add{transform:none}}
+.info{padding:14px 16px 16px}
+.info h3{font-weight:500;font-size:.78rem;letter-spacing:.06em;margin:0 0 6px;text-transform:uppercase}
+.pr{font-size:1rem;font-weight:500}.pr s{color:var(--muted);font-weight:400;margin-right:8px;font-size:.85rem}
+.fs{color:var(--muted);font-size:.76rem;margin-top:2px}
+.none{grid-column:1/-1;text-align:center;color:var(--muted);padding:30px}
+.updates{margin:0 24px;border-radius:28px;height:min(44vw,360px);display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;background:linear-gradient(120deg,#0f5257,#1f7a73 55%,#e8a317)}
+.updates h2{font-family:"Cormorant Garamond",serif;font-size:clamp(1.6rem,5vw,3.2rem);letter-spacing:.14em;margin:0 0 8px;font-weight:600}
+.about{max-width:760px;margin:56px auto 0;padding:0 24px;text-align:center}.about h2{font-family:"Cormorant Garamond",serif;font-size:clamp(2rem,4vw,2.9rem);margin:0 0 12px;font-weight:600}.about h2 i{color:var(--gold)}.about p{color:var(--muted);line-height:1.7;margin:0}.tg{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}.tg span{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:8px 20px;font-size:.88rem;letter-spacing:.06em}.buy+.buy{margin-top:8px;background:transparent;border:1.5px solid #1faa59;color:#1faa59}
+.perks{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:40px 24px 0}
+.perks div{background:var(--card);border-radius:18px;padding:20px;text-align:center;box-shadow:var(--shadow)}
+.perks b{display:block;font-weight:500;letter-spacing:.06em;margin-bottom:4px}
+.perks span{color:var(--muted);font-size:.9rem}
+footer{margin-top:48px;border-top:1px solid var(--line);padding-top:44px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:28px;text-align:center;max-width:1000px;margin:0 auto 40px;padding:0 20px}
+.cols h4{margin:0 0 12px;font-weight:500;letter-spacing:.14em;font-size:.82rem;text-transform:uppercase}
+.cols a,.cols p{display:block;color:var(--muted);font-size:.9rem;margin:6px 0}
+.cols a:hover{color:var(--ink)}
+.pay{background:var(--navy);color:#fff;text-align:center;padding:26px;font-size:.85rem}
+.pay div{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:12px}
+.pay i{font-style:normal;background:#fff;color:#16232b;border-radius:99px;padding:5px 14px;font-weight:500}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));width:54px;height:54px;border-radius:50%;background:#1faa59;color:#fff;display:grid;place-items:center;font-weight:700;box-shadow:0 6px 18px rgba(0,0,0,.3);z-index:15}
+#drawer{position:fixed;top:0;right:0;bottom:0;width:min(400px,100%);background:var(--bg);border-left:1px solid var(--line);z-index:40;transform:translateX(100%);transition:transform .3s;display:flex;flex-direction:column;padding:22px;padding-top:calc(22px + env(safe-area-inset-top,0px));padding-bottom:calc(22px + env(safe-area-inset-bottom,0px))}
+#drawer.open{transform:none}
+#drawer h3{margin:0 0 14px;font-weight:500;letter-spacing:.1em;display:flex;justify-content:space-between;align-items:center}
+#close{background:none;border:0;color:var(--ink);font-size:1.1rem}
+#items{flex:1;overflow:auto}
+.it{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid var(--line);padding:12px 0;font-size:.9rem}
+.it button{background:none;border:0;color:var(--sale)}
+.note{color:var(--muted);font-size:.82rem;margin:0 0 10px}
+.tot{display:flex;justify-content:space-between;font-weight:500;padding:10px 0 14px}
+.buy{display:block;text-align:center;background:#1faa59;color:#fff;border-radius:999px;padding:15px;letter-spacing:.08em;font-weight:500}
+#toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,200%);background:var(--ink);color:var(--bg);padding:12px 22px;border-radius:999px;font-size:.9rem;transition:transform .3s;z-index:50}
+#toast.on{transform:translate(-50%,0)}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s}
+.rv.in{opacity:1;transform:none}
+@media(max-width:820px){header{padding:0 12px}.sr{display:none}.header-l{display:none}.banners{grid-template-columns:1fr 1fr}.banners a{height:170px}.perks{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr);gap:12px;padding:0 12px}.hero{margin:10px 12px 0;border-radius:22px}.updates{margin:0 12px}.banners{padding:12px 12px 0}}
+@media(prefers-reduced-motion:reduce){.track,.rv,.card,.card .art,.mq div{transition:none;animation:none}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="mq"><div>CASH ON DELIVERY ACROSS BANGLADESH  ·  bKASH AND NAGAD ACCEPTED  ·  PREMIUM LAWN THREE-PIECE  ·  FREE SIZE  ·  ORDER ON WHATSAPP  ·  </div></div>
+<header>
+<label class="sr header-l"><span aria-hidden="true">⌕</span><input id="q" type="search" placeholder="Search designs" aria-label="Search designs"></label>
+<a class="logo" href="#">LAAM <i>ERA</i></a>
+<div class="hr"><a class="ic" id="hwa" href="#" aria-label="WhatsApp">W</a><a class="ic" href="https://www.facebook.com/laamerabd/" aria-label="Facebook">f</a>
+<button class="cartb" id="open" aria-label="Open cart"><span id="hsum">৳0</span><b id="cnt">0</b></button></div>
+</header>
+
+<div class="hero" id="hero">
+<div class="track" id="track">
+<div class="slide" style="background:linear-gradient(120deg,#0f5257,#1f7a73 55%,#e8a317)"><div><h1>LAAM ERA</h1><p>PREMIUM LAWN THREE-PIECE</p><a class="go" href="#new">SHOP NEW ARRIVALS</a></div></div>
+<div class="slide" style="background:linear-gradient(120deg,#5b1f6b,#a23a7e 60%,#f0a35c)"><div><h1>CHARMING</h1><p>PRINTED LAWN COLLECTION</p><a class="go" href="#new">SHOP NOW</a></div></div>
+<div class="slide" style="background:linear-gradient(120deg,#12283a,#2c5d86 60%,#7fd0cd)"><div><h1>MIDNIGHT</h1><p>EMBROIDERED LAWN COLLECTION</p><a class="go" href="#new">SHOP NOW</a></div></div>
+</div>
+<button class="arrow prev" aria-label="Previous slide">‹</button><button class="arrow next" aria-label="Next slide">›</button>
+<div class="dots" id="dots"></div>
+</div>
+
+<div class="banners rv">
+<a href="#new" data-f="Printed" style="background:linear-gradient(135deg,#6b2d1a,#c2512f)"><h2>PRINTED</h2><span>LAWN</span></a>
+<a href="#new" data-f="Embroidered" style="background:linear-gradient(135deg,#1c3a2b,#3d6b3a)"><h2>LUXURY</h2><span>EMBROIDERED</span></a>
+<a href="#new" data-f="All" style="background:linear-gradient(135deg,#5b1f6b,#c9527a)"><h2>FESTIVE</h2><span>FUNCTION WEAR</span></a>
+<a href="#new" data-f="All" style="background:linear-gradient(135deg,#12283a,#2c5d86)"><h2>EVERYDAY</h2><span>COTTON SETS</span></a>
+</div>
+
+<div class="sec rv" id="new"><h2>New <i>arrivals</i></h2><p>Complete 3-piece set: kameez, salwar and dupatta</p>
+<div class="chips" id="chips"></div></div>
+<div class="grid" id="grid"></div>
+
+<div class="sec rv"><h2>Trending <i>now</i></h2></div>
+<div class="grid" id="trend"></div>
+
+<div class="sec rv"><h2><i>Updates</i></h2></div>
+<div class="updates rv"><div><h2>NEW DESIGNS EVERY WEEK</h2><p>Follow our Facebook page to see them first.</p></div></div>
+
+<section class="about rv" id="about"><h2>About <i>LAAM ERA</i></h2><p>Discover the finest Bangladeshi three-piece collections, blending tradition with modernity. Each piece reflects our commitment to style, comfort, and affordability. Like and follow our page for the latest updates!</p><div class="tg"><span>Style</span><span>Comfort</span><span>Affordability</span></div></section>
+<div class="perks rv"><div><b>Cash on delivery</b><span>Pay when it arrives</span></div><div><b>bKash and Nagad</b><span>Send payment after we confirm</span></div><div><b>Delivery charge applies</b><span>We confirm the total on WhatsApp</span></div></div>
+
+<footer>
+<div class="cols">
+<div><h4>Information</h4><a href="#new">Shop</a><a href="#about">About us</a></div>
+<div><h4>Quick links</h4><a href="#" id="cl">Cart</a><a href="#new">New arrivals</a></div>
+<div><h4>Contact us</h4><a id="fwa" href="#">WhatsApp: 01819-215517</a><a id="fwa2" href="#">WhatsApp: 01921-169861</a><a href="mailto:Laam.era.bd@gmail.com">Laam.era.bd@gmail.com</a></div>
+<div><h4>Our company</h4><p>Islampur</p><p>Delivery all over Bangladesh</p></div>
+</div>
+<div class="pay"><div><i>Cash on delivery</i><i>bKash</i><i>Nagad</i></div>Copyright 2026 © LAAM ERA. All rights reserved.</div>
+</footer>
+
+<a class="wa" id="fab" href="#" aria-label="Order on WhatsApp">WA</a>
+<div id="toast" role="status"></div>
+
+<aside id="drawer" aria-label="Cart"><h3>YOUR CART <button id="close" aria-label="Close cart">✕</button></h3>
+<div id="items"></div><p class="note">Delivery charge is added when we confirm your order on WhatsApp.</p>
+<div class="tot"><span>Subtotal</span><span id="tot">৳0</span></div>
+<a class="buy" id="buy" target="_blank" rel="noopener" href="#">ORDER VIA 01819-215517</a><a class="buy" id="buy2" target="_blank" rel="noopener" href="#">ORDER VIA 01921-169861</a></aside>
+
+<script>
+// Edit here: WhatsApp number (country code, no + or spaces) and your designs.
+// Each design: [code, type, price, old price, picture, sold out?]
+var WA="8801819215517",WA2="8801921169861";
+var P=[
+["D-1101","Printed",1850,3300,"radial-gradient(circle at 50% 50%,#fff 0 9%,transparent 10%) 0 0/46px 46px,#243049",0],
+["D-1102","Printed",1750,3200,"radial-gradient(circle at 30% 30%,#f4c95d 0 8%,transparent 9%) 0 0/54px 54px,#0f5257",0],
+["D-1103","Printed",1800,3000,"repeating-linear-gradient(90deg,#c2512f 0 14px,#d96a46 14px 28px)",0],
+["D-1104","Embroidered",2300,4200,"radial-gradient(ellipse at 50% 50%,#d8e8a8 0 10%,transparent 11%) 0 0/50px 64px,#3d6b3a",0],
+["D-1105","Printed",1700,3100,"radial-gradient(circle at 50% 50%,#fff 0 8%,transparent 9%) 0 0/40px 40px,#c9527a",0],
+["D-1106","Embroidered",2450,4500,"radial-gradient(ellipse at 50% 50%,#7fd0cd 0 10%,transparent 11%) 0 0/52px 66px,#12283a",1],
+["D-1107","Printed",1650,2900,"repeating-linear-gradient(0deg,rgba(255,255,255,.28) 0 6px,transparent 6px 22px),repeating-linear-gradient(90deg,rgba(255,255,255,.28) 0 6px,transparent 6px 22px),#e0891d",0],
+["D-1108","Embroidered",2500,4600,"radial-gradient(circle at 50% 50%,#f4c95d 0 7%,transparent 8%) 0 0/44px 44px,#5b1f6b",0]
+];
+var cart=[],fav={},filt="All",query="",$=function(i){return document.getElementById(i)},fm=function(n){return "৳"+n.toLocaleString("en-US")};
+function wl(m,w){return "https://wa.me/"+(w||WA)+"?text="+encodeURIComponent(m)}
+var hi=wl("Hello LAAM ERA, I would like to order a three-piece set.");
+["hwa","fwa","fab"].forEach(function(i){$(i).href=hi;$(i).target="_blank";$(i).rel="noopener"});
+$("fwa2").href=wl("Hello LAAM ERA, I would like to order a three-piece set.",WA2);$("fwa2").target="_blank";$("fwa2").rel="noopener";
+function card(i){var x=P[i],s=Math.round((1-x[2]/x[3])*100);
+return '<div class="card"><div class="pic"><div class="art" style="background:'+x[4]+'"></div>'+(x[5]?'<span class="oos">OUT OF STOCK</span>':'<span class="save">Save '+s+'%</span>')+'<button class="heart" data-h="'+i+'" aria-label="Save to wishlist" aria-pressed="'+!!fav[i]+'">'+(fav[i]?'♥':'♡')+'</button><button class="add" data-add="'+i+'"'+(x[5]?' disabled':'')+'>'+(x[5]?'SOLD OUT':'ADD TO CART')+'</button></div><div class="info"><h3>3-pc '+x[1]+' lawn suit '+x[0]+'</h3><div class="pr">'+(x[5]?'':'<s>'+fm(x[3])+'</s>')+fm(x[2])+'</div><div class="fs">Free size</div></div></div>'}
+function show(){
+ var l=P.map(function(x,i){return i}).filter(function(i){var x=P[i];return (filt==="All"||x[1]===filt)&&(x[0]+" "+x[1]).toLowerCase().indexOf(query)>-1});
+ $("grid").innerHTML=l.length?l.map(card).join(""):'<p class="none">No design matches your search.</p>';
+ $("trend").innerHTML=[2,0,4,3].map(card).join("");
+ $("chips").innerHTML=["All","Printed","Embroidered"].map(function(c){return '<button class="chip" data-c="'+c+'" aria-pressed="'+(c===filt)+'">'+c+'</button>'}).join("");
+}
+function toast(m){var t=$("toast");t.textContent=m;t.classList.add("on");clearTimeout(toast.t);toast.t=setTimeout(function(){t.classList.remove("on")},1800)}
+function draw(){
+ var t=cart.reduce(function(a,c){return a+c.p},0);
+ $("cnt").textContent=cart.length;$("hsum").textContent=fm(t);$("tot").textContent=fm(t);
+ $("items").innerHTML=cart.length?cart.map(function(c,k){return '<div class="it"><span>'+c.n+'<br>'+fm(c.p)+'</span><button data-rm="'+k+'">Remove</button></div>'}).join(""):'<p style="color:var(--muted)">Your cart is empty. Add a suit to start your order.</p>';
+ $("buy").href=wl("Hello LAAM ERA, I would like to order:\n"+cart.map(function(c){return "- "+c.n+" ("+fm(c.p)+")"}).join("\n")+"\nSubtotal: "+fm(t));
+}
+document.addEventListener("click",function(e){
+ var b=e.target.closest("button,a");if(!b)return;var d=b.dataset;
+ if(b.id==="buy2"){b.href=$("buy").href.replace("wa.me/"+WA,"wa.me/"+WA2)}
+ else if(d.add!==undefined){var x=P[d.add];cart.push({n:"3-pc "+x[1]+" lawn suit "+x[0]+", free size",p:x[2]});draw();toast("Added "+x[0]+" to your cart")}
+ else if(d.rm!==undefined){cart.splice(d.rm,1);draw()}
+ else if(d.h!==undefined){fav[d.h]=!fav[d.h];show()}
+ else if(d.c){filt=d.c;show()}
+ else if(d.f){filt=d.f;show()}
+ else if(b.id==="open"||b.id==="cl"){e.preventDefault();$("drawer").classList.add("open")}
+ else if(b.id==="close")$("drawer").classList.remove("open");
+});
+$("q").addEventListener("input",function(e){query=e.target.value.trim().toLowerCase();show();location.hash="new"});
+var n=0,N=3,tm;
+$("dots").innerHTML=[0,1,2].map(function(i){return '<button data-d="'+i+'" aria-label="Slide '+(i+1)+'"></button>'}).join("");
+function go(k){n=(k+N)%N;$("track").style.transform="translateX(-"+n*100+"%)";document.querySelectorAll("#dots button").forEach(function(b,i){b.setAttribute("aria-current",i===n)})}
+function auto(){clearInterval(tm);if(!matchMedia("(prefers-reduced-motion:reduce)").matches)tm=setInterval(function(){go(n+1)},5000)}
+document.querySelector(".prev").onclick=function(){go(n-1);auto()};document.querySelector(".next").onclick=function(){go(n+1);auto()};
+$("dots").onclick=function(e){var d=e.target.dataset.d;if(d!==undefined){go(+d);auto()}};
+if("IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.12});document.querySelectorAll(".rv").forEach(function(el){io.observe(el)})}else document.querySelectorAll(".rv").forEach(function(el){el.classList.add("in")});
+show();go(0);auto();draw();
+</script>
+</body>
+</html>
